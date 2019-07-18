@@ -60,3 +60,8 @@ func (d Dictionary) Update(word, definition string) error {
 
 	return nil
 }
+
+// Delete deletes the definition of an existing word
+func (d Dictionary) Delete(word string) {
+	delete(d, word)
+}
